@@ -31,7 +31,8 @@ export async function fetchNews({
       health: 'health',
       science: 'science',
       sports: 'sports',
-      world: 'world'
+      world: 'world',
+      politics: 'politics'
     };
     
     const section = sectionMap[category] || 'home';

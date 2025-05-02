@@ -119,7 +119,8 @@
 
 .category-technology { background-color: #3f51b5; }
 .category-business   { background-color: goldenrod; }
-.category-sports     { background-color: #f44336; }
+.category-politics     { background-color: #00cf8d; }
 .category-health     { background-color: green; }
 .category-entertainment { background-color: #9c27b0; }
 .category-science    { background-color: #607d8b; }
+.category-world {background-color: #c50357;}

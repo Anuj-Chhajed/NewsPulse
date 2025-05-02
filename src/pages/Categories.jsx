@@ -3,7 +3,7 @@ import { Link, useRoute } from 'wouter';
 import NewsCard from '../components/NewsCard';
 import Loading from '../components/Loading';
 import { fetchNews } from '../utils/api';
-import { NewspaperClipping, Briefcase, Monitor, FilmSlate, Heartbeat, Flask, SoccerBall, Globe } from 'phosphor-react';
+import { NewspaperClipping, Briefcase, Monitor, FilmSlate, Heartbeat, Flask, SoccerBall, Globe, Users } from 'phosphor-react';
 import {motion} from "framer-motion"
 import "../styles/Categories.css"
 
@@ -21,7 +21,7 @@ function Categories() {
     { id: 'entertainment', name: 'Entertainment', description: 'Movies, music, and celebrity news', icon: <FilmSlate size={32} /> },
     { id: 'health', name: 'Health', description: 'Health, medicine, and wellness updates', icon: <Heartbeat size={32} /> },
     { id: 'science', name: 'Science', description: 'Science discoveries and research', icon: <Flask size={32} /> },
-    { id: 'sports', name: 'Sports', description: 'Sports events and athlete news', icon: <SoccerBall size={32} /> },
+    { id: 'politics', name: 'Politics', description: 'Latest political news and updates', icon: <Users size={32} /> },
     { id: 'world', name: 'World', description: 'International news and global events', icon: <Globe size={32} /> },
   ];
 
