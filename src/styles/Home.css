@@ -10,6 +10,9 @@ html {
   background-color: #fff;
   z-index: 1000;
 }
+body.dark .intro-animation{
+  background-color: #111;
+}
 
 .intro-logo {
   display: flex; flex-direction: column;
