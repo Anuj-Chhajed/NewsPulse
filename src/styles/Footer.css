@@ -53,6 +53,9 @@ body.dark .copyright {
   color: var(--primary);
   margin-bottom: 0.5rem;
 }
+body.dark .footer-logo {
+  color: rgb(255, 200, 80);
+}
 
 .footer-heading {
   font-size: 1.2rem;

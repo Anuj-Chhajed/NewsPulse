@@ -27,6 +27,9 @@ body.dark .intro-animation{
   border-radius: 2px;
   margin-top: 1rem;
 }
+body.dark .loading-bar {
+  background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));
+}
 
 .breaking-news-wrapper {
   display: flex;
@@ -59,7 +62,7 @@ body.dark .intro-animation{
   flex-shrink: 0;
 }
 body.dark .ticker-label {
-  background: rgb(216, 162, 27);
+  background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));
 }
 
 .ticker-marquee {
@@ -123,7 +126,7 @@ body.dark .ticker-item {
 }
 
 body.dark .ticker-item:hover {
-  background: linear-gradient(135deg, #ff6347, #ff7f50);
+  background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));
   color: #fff;
 }
 
@@ -132,6 +135,9 @@ body.dark .ticker-item:hover {
   color: #ff4500;
   opacity: 0.7;
   font-size: 1.2rem;
+}
+body.dark .ticker-separator {
+  color: rgb(255, 200, 80);
 }
 
 .home-page {
@@ -236,7 +242,12 @@ h1 {
   text-decoration: none;
   transition: background 0.3s ease;
 }
-
+body.dark .slide-button {
+  background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));
+}
+body.dark .slide-category {
+  background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));
+}
 .slide-button:hover {
   background-color: #e73300;
 }

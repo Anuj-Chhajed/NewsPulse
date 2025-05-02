@@ -67,6 +67,9 @@
   background-color: var(--accent);
   color: white;
 }
+body.dark .save-button.saved {
+  background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));
+}
 
 .category-badge {
   position: absolute;
@@ -100,7 +103,9 @@
 .news-card:hover .news-card-title {
   color: var(--accent);
 }
-
+body.dark .news-card:hover .news-card-title {
+  color:  rgb(216, 162, 27)
+}
 .news-card-description {
   font-size: 0.95rem;
   color: var(--text-secondary);
@@ -124,3 +129,4 @@
 .category-entertainment { background-color: #9c27b0; }
 .category-science    { background-color: #607d8b; }
 .category-world {background-color: #c50357;}
+body.dark .category-general {background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));}

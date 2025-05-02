@@ -45,6 +45,13 @@ body.dark .theme-toggle {
   transition: transform 0.3s ease;
   animation: pulseGlow 2.5s infinite;
 }
+body.dark .logo {
+  background: linear-gradient(135deg, rgb(216, 162, 27), rgb(255, 200, 80), rgb(160, 110, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+  animation: goldGlow 2.5s infinite;
+}
 
 .logo:hover {
   transform: scale(1.1) rotate(-2deg);
@@ -56,9 +63,23 @@ body.dark .theme-toggle {
   color: #ff6f3c;
   animation: pulseSpin 3s infinite linear;
 }
+body.dark .logo-icon {
+  color: rgb(255, 200, 80);
+}
 
 .logo-text {
   display: inline-block;
+}
+@keyframes goldGlow {
+  0% {
+    text-shadow: 0 0 6px rgba(216, 162, 27, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(255, 200, 80, 0.9), 0 0 18px rgba(160, 110, 0, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(216, 162, 27, 0.4);
+  }
 }
 
 @keyframes pulseGlow {
@@ -132,14 +153,14 @@ body.dark .theme-toggle {
 .theme-toggle {
   background: none;
   border: none;
-  font-size: 1.25rem;
+  font-size: 2rem;
   cursor: pointer;
   color: var(--text);
   transition: transform 0.3s ease;
 }
 
 .theme-toggle:hover {
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 
 .mobile-menu {
