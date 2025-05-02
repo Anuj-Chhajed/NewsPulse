@@ -7,6 +7,7 @@ import Search from './pages/Search';
 import Saved from './pages/Saved';
 import Article from './pages/Article';
 import Categories from './pages/Categories';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 
