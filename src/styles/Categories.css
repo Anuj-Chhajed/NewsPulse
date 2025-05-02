@@ -1,0 +1,128 @@
+:root {
+  --bg: linear-gradient(145deg, #e3f2fd, #fff);
+  --text: #1b1c1f;
+  --card-bg: #ffffff;
+  --card-border: #e1e4e8;
+  --card-hover: #f0f0f5;
+  --card-des: #ff6302;
+}
+
+body.dark {
+  --bg: linear-gradient(135deg, #0e0e10, #1c1c2e);
+  --text: #ffffff;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-hover: rgba(255, 255, 255, 0.08);
+  --card-des: rgb(240, 180, 14);
+}
+
+.categories-page {
+  background: var(--bg);
+  color: var(--text);
+  padding: 4rem 5%;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-description {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #666;
+}
+
+.categories-full-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.category-full-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.category-full-card:hover {
+  background: var(--card-hover);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.category-full-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.category-full-name {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.category-full-description {
+  font-size: 0.95rem;
+  color: var(--card-des);
+}
+
+.category-header {
+  margin-bottom: 2rem;
+}
+
+.back-to-categories {
+  color: #0077cc;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.back-to-categories:hover {
+  text-decoration: underline;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.loading,
+.error-container,
+.empty-state {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.retry-button,
+.browse-button {
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background: #0077cc;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.retry-button:hover,
+.browse-button:hover {
+  background: #005fa3;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .categories-page {
+    padding: 2rem 1.5rem;
+  }
+}
