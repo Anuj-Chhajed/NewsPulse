@@ -19,11 +19,12 @@ function Search() {
     setError('');
     setResults([]);
     setSearched(false);
-
+    const API_KEY = 'XJ1ObDfZDZcIYGYqTOnbCAaZA0KZ32Gs';
     try {
       const response = await fetch(
-        `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=XJ1ObDfZDZcIYGYqTOnbCAaZA0KZ32Gs&q=${encodeURIComponent(searchQuery)}`
+        `https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${API_KEY}&q=${searchQuery}`
       );
+
       if (!response.ok) throw new Error('Failed to fetch news');
       const data = await response.json();
       console.log(data)
@@ -37,7 +38,7 @@ function Search() {
             description: article.abstract || '',
             url: article.web_url,
             urlToImage: article.multimedia.default.url,
-            source: { name: article.source?.name || 'NYTimes' },
+            source: { name: article.source?.name || 'New York Times' },
             publishedAt: article.pub_date,
             category: article.section_name?.toLowerCase().replace(/\s/g, '') || 'general'
           };
@@ -55,6 +56,7 @@ function Search() {
       setLoading(false);
     }
   };
+
   return (
     <div className="search-page">
       <ScrollFadeIn>
