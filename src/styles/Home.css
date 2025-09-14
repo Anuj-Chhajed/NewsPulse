@@ -353,7 +353,10 @@ body.dark .slide-category {
   font-weight: bold;
   transition: background 0.3s ease;
 }
-
+body.dark .view-more-button{
+  background-color: white;
+  color: black;
+}
 .view-more-button:hover {
   background-color: #333;
 }
